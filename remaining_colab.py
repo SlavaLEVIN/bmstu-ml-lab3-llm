@@ -9,13 +9,13 @@ from datetime import datetime, timezone
 from importlib.metadata import version
 from pathlib import Path
 import torch
-from google.colab import drive, files
+from google.colab import files
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig, set_seed
 
 DATA = Path('/content/lab_remaining')
-FOLDER = Path('/content/drive/MyDrive/Lab3_4')
-drive.mount('/content/drive')
-FOLDER.mkdir(exist_ok=True)
+FOLDER = Path('/content/drive/MyDrive/Lab3_4') if Path('/content/drive/MyDrive').is_dir() else DATA / 'results'
+FOLDER.mkdir(parents=True, exist_ok=True)
+print('Результаты:', FOLDER, flush=True)
 settings = json.loads((DATA / 'generation_settings.json').read_text())
 SYSTEM, FORMATS = settings['system'], settings['formats']
 extra = [json.loads(s) for filename in ['classification_prompts.jsonl', 'hypothesis_prompts.jsonl']
@@ -82,6 +82,7 @@ if not torch.cuda.is_available():
     raise RuntimeError('Нужна среда Colab с GPU T4.')
 set_seed(42)
 try:
+    print('Загрузка Qwen 4B...', flush=True)
     if 'model' not in globals() or model.config._name_or_path != 'Qwen/Qwen3-4B-Instruct-2507':
         tokenizer = AutoTokenizer.from_pretrained('Qwen/Qwen3-4B-Instruct-2507')
         model = AutoModelForCausalLM.from_pretrained('Qwen/Qwen3-4B-Instruct-2507', torch_dtype=torch.float16,
@@ -90,6 +91,7 @@ try:
     del model, tokenizer
     gc.collect()
     torch.cuda.empty_cache()
+    print('Загрузка T-lite 8B...', flush=True)
     tokenizer = AutoTokenizer.from_pretrained('t-tech/T-lite-it-2.1')
     model = AutoModelForCausalLM.from_pretrained('t-tech/T-lite-it-2.1', device_map={'': 'cuda:0'},
                 torch_dtype=torch.float16, attn_implementation='sdpa', low_cpu_mem_usage=True,

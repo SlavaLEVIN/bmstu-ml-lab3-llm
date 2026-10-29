@@ -8,7 +8,7 @@
 |---|---|
 | `collect_api_answers.ipynb` | Запросы к GigaChat/GPT и объединение результатов |
 | `run_local_model_colab.ipynb` | Первичный запуск Qwen 4B в Colab |
-| `run_remaining_colab.ipynb`, `colab_inputs.zip` | Дополнительные E/H-прогоны Qwen и запуск российской T-lite 8B |
+| `run_remaining_colab.ipynb` | Дополнительные E/H-прогоны Qwen и запуск российской T-lite 8B |
 | `run_remaining_api.py` | Дополнительные E/H-прогоны GigaChat/GPT с продолжением |
 | `verify_solutions.py` | Проверка эталонов и исполнение исходных программ D |
 | `analyze_experiments.py` | E, baselines и H3/H5/H12 |
@@ -64,6 +64,6 @@ python run_remaining_api.py gigachat
 python run_remaining_api.py gpt
 ```
 
-Для дополнительных локальных тестов открой `run_remaining_colab.ipynb` в Colab и загрузи `colab_inputs.zip`. Скачанный `colab_experiments.jsonl` положи в `logs/`, затем выполни аналитическую тетрадь. Она не обращается к API.
+Для дополнительных локальных тестов открой `run_remaining_colab.ipynb` в Colab, выбери T4 и нажми «Выполнить все». Данные встроены; подключение Google Диска и загрузка ZIP не требуются. Скачанный `colab_experiments.jsonl` положи в `logs/`, затем выполни аналитическую тетрадь. Она не обращается к API.
 
 В CSV переносы ответа представлены буквальными `\n`, одна запись занимает одну строку. Исходный текст и код — в JSONL. Оценки качества в отчёте предварительные до человеческого подтверждения. Справочная стоимость GPT отличается от фактического списания посредника; у GigaChat Ultra платный тариф не опубликован. Локальные модели сравниваются по времени и памяти GPU.
