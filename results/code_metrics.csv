@@ -1,4 +1,4 @@
 ﻿model,pass_at_1,result_correct,method_error
-gigachat,,,
-gpt,,,
-local,,,
+gigachat,1.0,1.0,0.0
+gpt,1.0,1.0,0.0
+local,0.3333333333333333,0.0,0.0
