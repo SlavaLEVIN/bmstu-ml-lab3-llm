@@ -1,0 +1,2001 @@
+{
+  "system": "Решай задачи по машинному обучению на русском. Отвечай кратко, строго в указанном формате.",
+  "formats": {
+    "A": "Расчёт в 1–3 строках, затем ОТВЕТ: и все запрошенные значения. Без Markdown и LaTeX.",
+    "B": "Ответь «верно» или «неверно» и обоснуй одним коротким предложением.",
+    "C": "Назови метод и необходимые шаги; обоснуй выбор. Не более трёх коротких предложений.",
+    "D": "Только компактный исполняемый Python-код с импортами. Выполни все требования задачи. Без Markdown, комментариев и пояснений.",
+    "E": "Только метка класса, указанная в условии. Без пояснений.",
+    "F": "Короткий ответ с обоснованием, до трёх предложений. Если данных недостаточно, прямо укажи это."
+  },
+  "support": [
+    {
+      "row_id": 227,
+      "mean radius": 15.0,
+      "mean texture": 15.51,
+      "mean perimeter": 97.45,
+      "mean area": 684.5,
+      "mean concave points": 0.0378,
+      "target": 1,
+      "in_5_shot": 1
+    },
+    {
+      "row_id": 36,
+      "mean radius": 14.25,
+      "mean texture": 21.72,
+      "mean perimeter": 93.63,
+      "mean area": 633.0,
+      "mean concave points": 0.05598,
+      "target": 0,
+      "in_5_shot": 1
+    },
+    {
+      "row_id": 139,
+      "mean radius": 11.28,
+      "mean texture": 13.39,
+      "mean perimeter": 73.0,
+      "mean area": 384.8,
+      "mean concave points": 0.04796,
+      "target": 1,
+      "in_5_shot": 1
+    },
+    {
+      "row_id": 45,
+      "mean radius": 18.65,
+      "mean texture": 17.6,
+      "mean perimeter": 123.7,
+      "mean area": 1076.0,
+      "mean concave points": 0.1009,
+      "target": 0,
+      "in_5_shot": 1
+    },
+    {
+      "row_id": 484,
+      "mean radius": 15.73,
+      "mean texture": 11.28,
+      "mean perimeter": 102.8,
+      "mean area": 747.2,
+      "mean concave points": 0.06211,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 369,
+      "mean radius": 22.01,
+      "mean texture": 21.9,
+      "mean perimeter": 147.2,
+      "mean area": 1482.0,
+      "mean concave points": 0.1501,
+      "target": 0,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 297,
+      "mean radius": 11.76,
+      "mean texture": 18.14,
+      "mean perimeter": 75.0,
+      "mean area": 431.1,
+      "mean concave points": 0.03515,
+      "target": 0,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 538,
+      "mean radius": 7.729,
+      "mean texture": 25.49,
+      "mean perimeter": 47.98,
+      "mean area": 178.8,
+      "mean concave points": 0.0,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 243,
+      "mean radius": 13.75,
+      "mean texture": 23.77,
+      "mean perimeter": 88.54,
+      "mean area": 590.0,
+      "mean concave points": 0.02344,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 27,
+      "mean radius": 18.61,
+      "mean texture": 20.25,
+      "mean perimeter": 122.1,
+      "mean area": 1094.0,
+      "mean concave points": 0.07731,
+      "target": 0,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 333,
+      "mean radius": 11.25,
+      "mean texture": 14.78,
+      "mean perimeter": 71.38,
+      "mean area": 390.0,
+      "mean concave points": 0.002941,
+      "target": 1,
+      "in_5_shot": 1
+    },
+    {
+      "row_id": 539,
+      "mean radius": 7.691,
+      "mean texture": 25.44,
+      "mean perimeter": 48.34,
+      "mean area": 170.4,
+      "mean concave points": 0.01364,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 255,
+      "mean radius": 13.96,
+      "mean texture": 17.05,
+      "mean perimeter": 91.43,
+      "mean area": 602.4,
+      "mean concave points": 0.05246,
+      "target": 0,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 411,
+      "mean radius": 11.04,
+      "mean texture": 16.83,
+      "mean perimeter": 70.92,
+      "mean area": 373.2,
+      "mean concave points": 0.0248,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 133,
+      "mean radius": 15.71,
+      "mean texture": 13.93,
+      "mean perimeter": 102.0,
+      "mean area": 761.7,
+      "mean concave points": 0.05933,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 331,
+      "mean radius": 12.98,
+      "mean texture": 19.35,
+      "mean perimeter": 84.52,
+      "mean area": 514.0,
+      "mean concave points": 0.0295,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 132,
+      "mean radius": 16.16,
+      "mean texture": 21.54,
+      "mean perimeter": 106.2,
+      "mean area": 809.8,
+      "mean concave points": 0.05613,
+      "target": 0,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 97,
+      "mean radius": 9.787,
+      "mean texture": 19.94,
+      "mean perimeter": 62.11,
+      "mean area": 294.5,
+      "mean concave points": 0.007937,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 443,
+      "mean radius": 10.57,
+      "mean texture": 18.32,
+      "mean perimeter": 66.82,
+      "mean area": 340.9,
+      "mean concave points": 0.01111,
+      "target": 1,
+      "in_5_shot": 0
+    },
+    {
+      "row_id": 225,
+      "mean radius": 14.34,
+      "mean texture": 13.47,
+      "mean perimeter": 92.51,
+      "mean area": 641.2,
+      "mean concave points": 0.04603,
+      "target": 1,
+      "in_5_shot": 0
+    }
+  ],
+  "test": [
+    {
+      "row_id": 77,
+      "mean radius": 18.05,
+      "mean texture": 16.15,
+      "mean perimeter": 120.2,
+      "mean area": 1006.0,
+      "mean concave points": 0.108,
+      "target": 0
+    },
+    {
+      "row_id": 298,
+      "mean radius": 14.26,
+      "mean texture": 18.17,
+      "mean perimeter": 91.22,
+      "mean area": 633.1,
+      "mean concave points": 0.01374,
+      "target": 1
+    },
+    {
+      "row_id": 20,
+      "mean radius": 13.08,
+      "mean texture": 15.71,
+      "mean perimeter": 85.63,
+      "mean area": 520.0,
+      "mean concave points": 0.0311,
+      "target": 1
+    },
+    {
+      "row_id": 363,
+      "mean radius": 16.5,
+      "mean texture": 18.29,
+      "mean perimeter": 106.6,
+      "mean area": 838.1,
+      "mean concave points": 0.04835,
+      "target": 1
+    },
+    {
+      "row_id": 423,
+      "mean radius": 13.66,
+      "mean texture": 19.13,
+      "mean perimeter": 89.46,
+      "mean area": 575.3,
+      "mean concave points": 0.04812,
+      "target": 1
+    },
+    {
+      "row_id": 349,
+      "mean radius": 11.95,
+      "mean texture": 14.96,
+      "mean perimeter": 77.23,
+      "mean area": 426.7,
+      "mean concave points": 0.01787,
+      "target": 1
+    },
+    {
+      "row_id": 128,
+      "mean radius": 15.1,
+      "mean texture": 16.39,
+      "mean perimeter": 99.58,
+      "mean area": 674.5,
+      "mean concave points": 0.08534,
+      "target": 1
+    },
+    {
+      "row_id": 536,
+      "mean radius": 14.27,
+      "mean texture": 22.55,
+      "mean perimeter": 93.77,
+      "mean area": 629.8,
+      "mean concave points": 0.06139,
+      "target": 0
+    },
+    {
+      "row_id": 266,
+      "mean radius": 10.6,
+      "mean texture": 18.95,
+      "mean perimeter": 69.28,
+      "mean area": 346.4,
+      "mean concave points": 0.02642,
+      "target": 1
+    },
+    {
+      "row_id": 444,
+      "mean radius": 18.03,
+      "mean texture": 16.85,
+      "mean perimeter": 117.5,
+      "mean area": 990.0,
+      "mean concave points": 0.06254,
+      "target": 0
+    },
+    {
+      "row_id": 102,
+      "mean radius": 12.18,
+      "mean texture": 20.52,
+      "mean perimeter": 77.22,
+      "mean area": 458.7,
+      "mean concave points": 0.0177,
+      "target": 1
+    },
+    {
+      "row_id": 408,
+      "mean radius": 17.99,
+      "mean texture": 20.66,
+      "mean perimeter": 117.8,
+      "mean area": 991.7,
+      "mean concave points": 0.08824,
+      "target": 0
+    },
+    {
+      "row_id": 537,
+      "mean radius": 11.69,
+      "mean texture": 24.44,
+      "mean perimeter": 76.37,
+      "mean area": 406.4,
+      "mean concave points": 0.04531,
+      "target": 1
+    },
+    {
+      "row_id": 507,
+      "mean radius": 11.06,
+      "mean texture": 17.12,
+      "mean perimeter": 71.25,
+      "mean area": 366.5,
+      "mean concave points": 0.04268,
+      "target": 1
+    },
+    {
+      "row_id": 307,
+      "mean radius": 9.0,
+      "mean texture": 14.4,
+      "mean perimeter": 56.36,
+      "mean area": 246.3,
+      "mean concave points": 0.003472,
+      "target": 1
+    },
+    {
+      "row_id": 24,
+      "mean radius": 16.65,
+      "mean texture": 21.38,
+      "mean perimeter": 110.0,
+      "mean area": 904.6,
+      "mean concave points": 0.0917,
+      "target": 0
+    },
+    {
+      "row_id": 180,
+      "mean radius": 27.22,
+      "mean texture": 21.87,
+      "mean perimeter": 182.1,
+      "mean area": 2250.0,
+      "mean concave points": 0.1878,
+      "target": 0
+    },
+    {
+      "row_id": 328,
+      "mean radius": 16.27,
+      "mean texture": 20.71,
+      "mean perimeter": 106.9,
+      "mean area": 813.7,
+      "mean concave points": 0.08488,
+      "target": 0
+    },
+    {
+      "row_id": 70,
+      "mean radius": 18.94,
+      "mean texture": 21.31,
+      "mean perimeter": 123.6,
+      "mean area": 1130.0,
+      "mean concave points": 0.07951,
+      "target": 0
+    },
+    {
+      "row_id": 417,
+      "mean radius": 15.5,
+      "mean texture": 21.08,
+      "mean perimeter": 102.9,
+      "mean area": 803.1,
+      "mean concave points": 0.08481,
+      "target": 0
+    },
+    {
+      "row_id": 291,
+      "mean radius": 14.96,
+      "mean texture": 19.1,
+      "mean perimeter": 97.03,
+      "mean area": 687.3,
+      "mean concave points": 0.04819,
+      "target": 1
+    },
+    {
+      "row_id": 359,
+      "mean radius": 9.436,
+      "mean texture": 18.32,
+      "mean perimeter": 59.82,
+      "mean area": 278.6,
+      "mean concave points": 0.01406,
+      "target": 1
+    },
+    {
+      "row_id": 504,
+      "mean radius": 9.268,
+      "mean texture": 12.87,
+      "mean perimeter": 61.49,
+      "mean area": 248.7,
+      "mean concave points": 0.05252,
+      "target": 1
+    },
+    {
+      "row_id": 217,
+      "mean radius": 10.2,
+      "mean texture": 17.48,
+      "mean perimeter": 65.05,
+      "mean area": 321.2,
+      "mean concave points": 0.01071,
+      "target": 1
+    },
+    {
+      "row_id": 542,
+      "mean radius": 14.74,
+      "mean texture": 25.42,
+      "mean perimeter": 94.7,
+      "mean area": 668.6,
+      "mean concave points": 0.03027,
+      "target": 1
+    },
+    {
+      "row_id": 320,
+      "mean radius": 10.25,
+      "mean texture": 16.18,
+      "mean perimeter": 66.52,
+      "mean area": 324.2,
+      "mean concave points": 0.03965,
+      "target": 1
+    },
+    {
+      "row_id": 415,
+      "mean radius": 11.89,
+      "mean texture": 21.17,
+      "mean perimeter": 76.39,
+      "mean area": 433.8,
+      "mean concave points": 0.02179,
+      "target": 1
+    },
+    {
+      "row_id": 296,
+      "mean radius": 10.91,
+      "mean texture": 12.35,
+      "mean perimeter": 69.14,
+      "mean area": 363.7,
+      "mean concave points": 0.01369,
+      "target": 1
+    },
+    {
+      "row_id": 140,
+      "mean radius": 9.738,
+      "mean texture": 11.97,
+      "mean perimeter": 61.24,
+      "mean area": 288.5,
+      "mean concave points": 0.0,
+      "target": 1
+    },
+    {
+      "row_id": 468,
+      "mean radius": 17.6,
+      "mean texture": 23.33,
+      "mean perimeter": 119.0,
+      "mean area": 980.5,
+      "mean concave points": 0.1002,
+      "target": 0
+    },
+    {
+      "row_id": 399,
+      "mean radius": 11.8,
+      "mean texture": 17.26,
+      "mean perimeter": 75.26,
+      "mean area": 431.9,
+      "mean concave points": 0.01638,
+      "target": 1
+    },
+    {
+      "row_id": 41,
+      "mean radius": 10.95,
+      "mean texture": 21.35,
+      "mean perimeter": 71.9,
+      "mean area": 371.1,
+      "mean concave points": 0.05669,
+      "target": 0
+    },
+    {
+      "row_id": 354,
+      "mean radius": 11.14,
+      "mean texture": 14.07,
+      "mean perimeter": 71.24,
+      "mean area": 384.6,
+      "mean concave points": 0.01471,
+      "target": 1
+    },
+    {
+      "row_id": 223,
+      "mean radius": 15.75,
+      "mean texture": 20.25,
+      "mean perimeter": 102.6,
+      "mean area": 761.3,
+      "mean concave points": 0.06462,
+      "target": 0
+    },
+    {
+      "row_id": 540,
+      "mean radius": 11.54,
+      "mean texture": 14.44,
+      "mean perimeter": 74.65,
+      "mean area": 402.9,
+      "mean concave points": 0.02594,
+      "target": 1
+    },
+    {
+      "row_id": 66,
+      "mean radius": 9.465,
+      "mean texture": 21.01,
+      "mean perimeter": 60.11,
+      "mean area": 269.4,
+      "mean concave points": 0.01504,
+      "target": 1
+    },
+    {
+      "row_id": 228,
+      "mean radius": 12.62,
+      "mean texture": 23.97,
+      "mean perimeter": 81.35,
+      "mean area": 496.4,
+      "mean concave points": 0.02036,
+      "target": 1
+    },
+    {
+      "row_id": 340,
+      "mean radius": 14.42,
+      "mean texture": 16.54,
+      "mean perimeter": 94.15,
+      "mean area": 641.2,
+      "mean concave points": 0.04223,
+      "target": 1
+    },
+    {
+      "row_id": 439,
+      "mean radius": 14.02,
+      "mean texture": 15.66,
+      "mean perimeter": 89.59,
+      "mean area": 606.5,
+      "mean concave points": 0.02652,
+      "target": 1
+    },
+    {
+      "row_id": 205,
+      "mean radius": 15.12,
+      "mean texture": 16.68,
+      "mean perimeter": 98.78,
+      "mean area": 716.6,
+      "mean concave points": 0.04079,
+      "target": 0
+    },
+    {
+      "row_id": 412,
+      "mean radius": 9.397,
+      "mean texture": 21.68,
+      "mean perimeter": 59.75,
+      "mean area": 268.8,
+      "mean concave points": 0.005128,
+      "target": 1
+    },
+    {
+      "row_id": 567,
+      "mean radius": 20.6,
+      "mean texture": 29.33,
+      "mean perimeter": 140.1,
+      "mean area": 1265.0,
+      "mean concave points": 0.152,
+      "target": 0
+    },
+    {
+      "row_id": 194,
+      "mean radius": 14.86,
+      "mean texture": 23.21,
+      "mean perimeter": 100.4,
+      "mean area": 671.4,
+      "mean concave points": 0.08878,
+      "target": 0
+    },
+    {
+      "row_id": 467,
+      "mean radius": 9.668,
+      "mean texture": 18.1,
+      "mean perimeter": 61.06,
+      "mean area": 286.3,
+      "mean concave points": 0.005769,
+      "target": 1
+    },
+    {
+      "row_id": 127,
+      "mean radius": 19.0,
+      "mean texture": 18.91,
+      "mean perimeter": 123.4,
+      "mean area": 1138.0,
+      "mean concave points": 0.05627,
+      "target": 0
+    },
+    {
+      "row_id": 519,
+      "mean radius": 12.75,
+      "mean texture": 16.7,
+      "mean perimeter": 82.51,
+      "mean area": 493.8,
+      "mean concave points": 0.02995,
+      "target": 1
+    },
+    {
+      "row_id": 548,
+      "mean radius": 9.683,
+      "mean texture": 19.34,
+      "mean perimeter": 61.05,
+      "mean area": 285.7,
+      "mean concave points": 0.009615,
+      "target": 1
+    },
+    {
+      "row_id": 74,
+      "mean radius": 12.31,
+      "mean texture": 16.52,
+      "mean perimeter": 79.19,
+      "mean area": 470.9,
+      "mean concave points": 0.02272,
+      "target": 1
+    },
+    {
+      "row_id": 156,
+      "mean radius": 17.68,
+      "mean texture": 20.74,
+      "mean perimeter": 117.4,
+      "mean area": 963.7,
+      "mean concave points": 0.1054,
+      "target": 0
+    },
+    {
+      "row_id": 488,
+      "mean radius": 11.68,
+      "mean texture": 16.17,
+      "mean perimeter": 75.49,
+      "mean area": 420.5,
+      "mean concave points": 0.03132,
+      "target": 1
+    },
+    {
+      "row_id": 372,
+      "mean radius": 21.37,
+      "mean texture": 15.1,
+      "mean perimeter": 141.3,
+      "mean area": 1386.0,
+      "mean concave points": 0.1255,
+      "target": 0
+    },
+    {
+      "row_id": 206,
+      "mean radius": 9.876,
+      "mean texture": 17.27,
+      "mean perimeter": 62.92,
+      "mean area": 295.4,
+      "mean concave points": 0.01952,
+      "target": 1
+    },
+    {
+      "row_id": 267,
+      "mean radius": 13.59,
+      "mean texture": 21.84,
+      "mean perimeter": 87.16,
+      "mean area": 561.0,
+      "mean concave points": 0.02142,
+      "target": 1
+    },
+    {
+      "row_id": 326,
+      "mean radius": 14.11,
+      "mean texture": 12.88,
+      "mean perimeter": 90.03,
+      "mean area": 616.5,
+      "mean concave points": 0.02733,
+      "target": 1
+    },
+    {
+      "row_id": 103,
+      "mean radius": 9.876,
+      "mean texture": 19.4,
+      "mean perimeter": 63.95,
+      "mean area": 298.3,
+      "mean concave points": 0.03029,
+      "target": 1
+    },
+    {
+      "row_id": 86,
+      "mean radius": 14.48,
+      "mean texture": 21.46,
+      "mean perimeter": 94.25,
+      "mean area": 648.2,
+      "mean concave points": 0.04938,
+      "target": 0
+    },
+    {
+      "row_id": 534,
+      "mean radius": 10.96,
+      "mean texture": 17.62,
+      "mean perimeter": 70.79,
+      "mean area": 365.6,
+      "mean concave points": 0.02788,
+      "target": 1
+    },
+    {
+      "row_id": 495,
+      "mean radius": 14.87,
+      "mean texture": 20.21,
+      "mean perimeter": 96.12,
+      "mean area": 680.9,
+      "mean concave points": 0.04951,
+      "target": 1
+    },
+    {
+      "row_id": 198,
+      "mean radius": 19.18,
+      "mean texture": 22.49,
+      "mean perimeter": 127.5,
+      "mean area": 1148.0,
+      "mean concave points": 0.06772,
+      "target": 0
+    },
+    {
+      "row_id": 203,
+      "mean radius": 13.81,
+      "mean texture": 23.75,
+      "mean perimeter": 91.56,
+      "mean area": 597.8,
+      "mean concave points": 0.09176,
+      "target": 0
+    },
+    {
+      "row_id": 385,
+      "mean radius": 14.6,
+      "mean texture": 23.29,
+      "mean perimeter": 93.97,
+      "mean area": 664.7,
+      "mean concave points": 0.05271,
+      "target": 0
+    },
+    {
+      "row_id": 167,
+      "mean radius": 16.78,
+      "mean texture": 18.8,
+      "mean perimeter": 109.3,
+      "mean area": 886.3,
+      "mean concave points": 0.06576,
+      "target": 0
+    },
+    {
+      "row_id": 526,
+      "mean radius": 13.46,
+      "mean texture": 18.75,
+      "mean perimeter": 87.44,
+      "mean area": 551.1,
+      "mean concave points": 0.03152,
+      "target": 1
+    },
+    {
+      "row_id": 237,
+      "mean radius": 20.48,
+      "mean texture": 21.46,
+      "mean perimeter": 132.5,
+      "mean area": 1306.0,
+      "mean concave points": 0.06022,
+      "target": 0
+    },
+    {
+      "row_id": 535,
+      "mean radius": 20.55,
+      "mean texture": 20.86,
+      "mean perimeter": 137.8,
+      "mean area": 1308.0,
+      "mean concave points": 0.1322,
+      "target": 0
+    },
+    {
+      "row_id": 122,
+      "mean radius": 24.25,
+      "mean texture": 20.2,
+      "mean perimeter": 166.2,
+      "mean area": 1761.0,
+      "mean concave points": 0.2012,
+      "target": 0
+    },
+    {
+      "row_id": 204,
+      "mean radius": 12.47,
+      "mean texture": 18.6,
+      "mean perimeter": 81.09,
+      "mean area": 481.9,
+      "mean concave points": 0.03821,
+      "target": 1
+    },
+    {
+      "row_id": 104,
+      "mean radius": 10.49,
+      "mean texture": 19.29,
+      "mean perimeter": 67.41,
+      "mean area": 336.1,
+      "mean concave points": 0.01201,
+      "target": 1
+    },
+    {
+      "row_id": 258,
+      "mean radius": 15.66,
+      "mean texture": 23.2,
+      "mean perimeter": 110.2,
+      "mean area": 773.5,
+      "mean concave points": 0.1377,
+      "target": 0
+    },
+    {
+      "row_id": 308,
+      "mean radius": 13.5,
+      "mean texture": 12.71,
+      "mean perimeter": 85.69,
+      "mean area": 566.2,
+      "mean concave points": 0.004419,
+      "target": 1
+    },
+    {
+      "row_id": 447,
+      "mean radius": 14.8,
+      "mean texture": 17.66,
+      "mean perimeter": 95.88,
+      "mean area": 674.8,
+      "mean concave points": 0.0226,
+      "target": 1
+    },
+    {
+      "row_id": 464,
+      "mean radius": 13.17,
+      "mean texture": 18.22,
+      "mean perimeter": 84.28,
+      "mean area": 537.3,
+      "mean concave points": 0.0287,
+      "target": 1
+    },
+    {
+      "row_id": 433,
+      "mean radius": 18.82,
+      "mean texture": 21.97,
+      "mean perimeter": 123.7,
+      "mean area": 1110.0,
+      "mean concave points": 0.08744,
+      "target": 0
+    },
+    {
+      "row_id": 275,
+      "mean radius": 11.89,
+      "mean texture": 17.36,
+      "mean perimeter": 76.2,
+      "mean area": 435.6,
+      "mean concave points": 0.07404,
+      "target": 1
+    },
+    {
+      "row_id": 390,
+      "mean radius": 10.26,
+      "mean texture": 12.22,
+      "mean perimeter": 65.75,
+      "mean area": 321.6,
+      "mean concave points": 0.01968,
+      "target": 1
+    },
+    {
+      "row_id": 292,
+      "mean radius": 12.95,
+      "mean texture": 16.02,
+      "mean perimeter": 83.14,
+      "mean area": 513.7,
+      "mean concave points": 0.0337,
+      "target": 1
+    },
+    {
+      "row_id": 150,
+      "mean radius": 13.0,
+      "mean texture": 20.78,
+      "mean perimeter": 83.51,
+      "mean area": 519.4,
+      "mean concave points": 0.02645,
+      "target": 1
+    },
+    {
+      "row_id": 516,
+      "mean radius": 18.31,
+      "mean texture": 20.58,
+      "mean perimeter": 120.8,
+      "mean area": 1052.0,
+      "mean concave points": 0.09451,
+      "target": 0
+    },
+    {
+      "row_id": 168,
+      "mean radius": 17.47,
+      "mean texture": 24.68,
+      "mean perimeter": 116.1,
+      "mean area": 984.6,
+      "mean concave points": 0.1043,
+      "target": 0
+    },
+    {
+      "row_id": 256,
+      "mean radius": 19.55,
+      "mean texture": 28.77,
+      "mean perimeter": 133.6,
+      "mean area": 1207.0,
+      "mean concave points": 0.1144,
+      "target": 0
+    },
+    {
+      "row_id": 83,
+      "mean radius": 19.1,
+      "mean texture": 26.29,
+      "mean perimeter": 129.1,
+      "mean area": 1132.0,
+      "mean concave points": 0.1469,
+      "target": 0
+    },
+    {
+      "row_id": 375,
+      "mean radius": 16.17,
+      "mean texture": 16.07,
+      "mean perimeter": 106.3,
+      "mean area": 788.5,
+      "mean concave points": 0.05397,
+      "target": 1
+    },
+    {
+      "row_id": 247,
+      "mean radius": 12.89,
+      "mean texture": 14.11,
+      "mean perimeter": 84.95,
+      "mean area": 512.2,
+      "mean concave points": 0.0398,
+      "target": 1
+    },
+    {
+      "row_id": 549,
+      "mean radius": 10.82,
+      "mean texture": 24.21,
+      "mean perimeter": 68.89,
+      "mean area": 361.6,
+      "mean concave points": 0.00816,
+      "target": 1
+    },
+    {
+      "row_id": 496,
+      "mean radius": 12.65,
+      "mean texture": 18.17,
+      "mean perimeter": 82.69,
+      "mean area": 485.6,
+      "mean concave points": 0.05074,
+      "target": 1
+    },
+    {
+      "row_id": 518,
+      "mean radius": 12.88,
+      "mean texture": 18.22,
+      "mean perimeter": 84.45,
+      "mean area": 493.1,
+      "mean concave points": 0.05303,
+      "target": 1
+    },
+    {
+      "row_id": 13,
+      "mean radius": 15.85,
+      "mean texture": 23.95,
+      "mean perimeter": 103.7,
+      "mean area": 782.7,
+      "mean concave points": 0.05364,
+      "target": 0
+    },
+    {
+      "row_id": 84,
+      "mean radius": 12.0,
+      "mean texture": 15.65,
+      "mean perimeter": 76.95,
+      "mean area": 443.3,
+      "mean concave points": 0.01863,
+      "target": 1
+    },
+    {
+      "row_id": 8,
+      "mean radius": 13.0,
+      "mean texture": 21.82,
+      "mean perimeter": 87.5,
+      "mean area": 519.8,
+      "mean concave points": 0.09353,
+      "target": 0
+    },
+    {
+      "row_id": 403,
+      "mean radius": 12.94,
+      "mean texture": 16.17,
+      "mean perimeter": 83.18,
+      "mean area": 507.6,
+      "mean concave points": 0.0239,
+      "target": 1
+    },
+    {
+      "row_id": 344,
+      "mean radius": 11.71,
+      "mean texture": 15.45,
+      "mean perimeter": 75.03,
+      "mean area": 420.3,
+      "mean concave points": 0.0325,
+      "target": 1
+    },
+    {
+      "row_id": 431,
+      "mean radius": 12.4,
+      "mean texture": 17.68,
+      "mean perimeter": 81.47,
+      "mean area": 467.8,
+      "mean concave points": 0.02799,
+      "target": 1
+    },
+    {
+      "row_id": 51,
+      "mean radius": 13.64,
+      "mean texture": 16.34,
+      "mean perimeter": 87.21,
+      "mean area": 571.8,
+      "mean concave points": 0.01723,
+      "target": 1
+    },
+    {
+      "row_id": 14,
+      "mean radius": 13.73,
+      "mean texture": 22.61,
+      "mean perimeter": 93.6,
+      "mean area": 578.3,
+      "mean concave points": 0.08025,
+      "target": 0
+    },
+    {
+      "row_id": 452,
+      "mean radius": 12.0,
+      "mean texture": 28.23,
+      "mean perimeter": 76.77,
+      "mean area": 442.5,
+      "mean concave points": 0.01945,
+      "target": 1
+    },
+    {
+      "row_id": 398,
+      "mean radius": 11.06,
+      "mean texture": 14.83,
+      "mean perimeter": 70.31,
+      "mean area": 378.2,
+      "mean concave points": 0.007246,
+      "target": 1
+    },
+    {
+      "row_id": 269,
+      "mean radius": 10.71,
+      "mean texture": 20.39,
+      "mean perimeter": 69.5,
+      "mean area": 344.9,
+      "mean concave points": 0.02867,
+      "target": 1
+    },
+    {
+      "row_id": 501,
+      "mean radius": 13.82,
+      "mean texture": 24.49,
+      "mean perimeter": 92.33,
+      "mean area": 595.9,
+      "mean concave points": 0.06759,
+      "target": 0
+    },
+    {
+      "row_id": 85,
+      "mean radius": 18.46,
+      "mean texture": 18.52,
+      "mean perimeter": 121.1,
+      "mean area": 1075.0,
+      "mean concave points": 0.08795,
+      "target": 0
+    },
+    {
+      "row_id": 541,
+      "mean radius": 14.47,
+      "mean texture": 24.99,
+      "mean perimeter": 95.81,
+      "mean area": 656.4,
+      "mean concave points": 0.0389,
+      "target": 1
+    },
+    {
+      "row_id": 261,
+      "mean radius": 17.35,
+      "mean texture": 23.06,
+      "mean perimeter": 111.0,
+      "mean area": 933.1,
+      "mean concave points": 0.02837,
+      "target": 0
+    },
+    {
+      "row_id": 37,
+      "mean radius": 13.03,
+      "mean texture": 18.42,
+      "mean perimeter": 82.61,
+      "mean area": 523.8,
+      "mean concave points": 0.02923,
+      "target": 1
+    },
+    {
+      "row_id": 564,
+      "mean radius": 21.56,
+      "mean texture": 22.39,
+      "mean perimeter": 142.0,
+      "mean area": 1479.0,
+      "mean concave points": 0.1389,
+      "target": 0
+    },
+    {
+      "row_id": 242,
+      "mean radius": 11.3,
+      "mean texture": 18.19,
+      "mean perimeter": 73.93,
+      "mean area": 389.4,
+      "mean concave points": 0.02854,
+      "target": 1
+    },
+    {
+      "row_id": 358,
+      "mean radius": 8.878,
+      "mean texture": 15.49,
+      "mean perimeter": 56.74,
+      "mean area": 241.0,
+      "mean concave points": 0.02381,
+      "target": 1
+    },
+    {
+      "row_id": 121,
+      "mean radius": 18.66,
+      "mean texture": 17.12,
+      "mean perimeter": 121.4,
+      "mean area": 1077.0,
+      "mean concave points": 0.08665,
+      "target": 0
+    },
+    {
+      "row_id": 461,
+      "mean radius": 27.42,
+      "mean texture": 26.27,
+      "mean perimeter": 186.9,
+      "mean area": 2501.0,
+      "mean concave points": 0.1689,
+      "target": 0
+    },
+    {
+      "row_id": 428,
+      "mean radius": 11.13,
+      "mean texture": 16.62,
+      "mean perimeter": 70.47,
+      "mean area": 381.1,
+      "mean concave points": 0.0137,
+      "target": 1
+    },
+    {
+      "row_id": 553,
+      "mean radius": 9.333,
+      "mean texture": 21.94,
+      "mean perimeter": 59.01,
+      "mean area": 264.0,
+      "mean concave points": 0.01282,
+      "target": 1
+    },
+    {
+      "row_id": 321,
+      "mean radius": 20.16,
+      "mean texture": 19.66,
+      "mean perimeter": 131.1,
+      "mean area": 1274.0,
+      "mean concave points": 0.07726,
+      "target": 0
+    },
+    {
+      "row_id": 528,
+      "mean radius": 13.94,
+      "mean texture": 13.17,
+      "mean perimeter": 90.31,
+      "mean area": 594.2,
+      "mean concave points": 0.06615,
+      "target": 1
+    },
+    {
+      "row_id": 527,
+      "mean radius": 12.34,
+      "mean texture": 12.27,
+      "mean perimeter": 78.94,
+      "mean area": 468.5,
+      "mean concave points": 0.02647,
+      "target": 1
+    },
+    {
+      "row_id": 95,
+      "mean radius": 20.26,
+      "mean texture": 23.03,
+      "mean perimeter": 132.4,
+      "mean area": 1264.0,
+      "mean concave points": 0.08683,
+      "target": 0
+    },
+    {
+      "row_id": 483,
+      "mean radius": 13.7,
+      "mean texture": 17.64,
+      "mean perimeter": 87.76,
+      "mean area": 571.1,
+      "mean concave points": 0.0316,
+      "target": 1
+    },
+    {
+      "row_id": 199,
+      "mean radius": 14.45,
+      "mean texture": 20.22,
+      "mean perimeter": 94.49,
+      "mean area": 642.7,
+      "mean concave points": 0.0598,
+      "target": 0
+    },
+    {
+      "row_id": 284,
+      "mean radius": 12.89,
+      "mean texture": 15.7,
+      "mean perimeter": 84.08,
+      "mean area": 516.6,
+      "mean concave points": 0.0339,
+      "target": 1
+    },
+    {
+      "row_id": 523,
+      "mean radius": 13.71,
+      "mean texture": 18.68,
+      "mean perimeter": 88.73,
+      "mean area": 571.0,
+      "mean concave points": 0.03783,
+      "target": 1
+    },
+    {
+      "row_id": 498,
+      "mean radius": 18.49,
+      "mean texture": 17.52,
+      "mean perimeter": 121.3,
+      "mean area": 1068.0,
+      "mean concave points": 0.09183,
+      "target": 0
+    },
+    {
+      "row_id": 246,
+      "mean radius": 13.2,
+      "mean texture": 17.43,
+      "mean perimeter": 84.13,
+      "mean area": 541.6,
+      "mean concave points": 0.01105,
+      "target": 1
+    },
+    {
+      "row_id": 64,
+      "mean radius": 12.68,
+      "mean texture": 23.84,
+      "mean perimeter": 82.69,
+      "mean area": 499.0,
+      "mean concave points": 0.06873,
+      "target": 0
+    },
+    {
+      "row_id": 434,
+      "mean radius": 14.86,
+      "mean texture": 16.94,
+      "mean perimeter": 94.89,
+      "mean area": 673.7,
+      "mean concave points": 0.02877,
+      "target": 1
+    },
+    {
+      "row_id": 316,
+      "mean radius": 12.18,
+      "mean texture": 14.08,
+      "mean perimeter": 77.25,
+      "mean area": 461.4,
+      "mean concave points": 0.005051,
+      "target": 1
+    },
+    {
+      "row_id": 171,
+      "mean radius": 13.43,
+      "mean texture": 19.63,
+      "mean perimeter": 85.84,
+      "mean area": 565.4,
+      "mean concave points": 0.03438,
+      "target": 0
+    },
+    {
+      "row_id": 1,
+      "mean radius": 20.57,
+      "mean texture": 17.77,
+      "mean perimeter": 132.9,
+      "mean area": 1326.0,
+      "mean concave points": 0.07017,
+      "target": 0
+    },
+    {
+      "row_id": 310,
+      "mean radius": 11.7,
+      "mean texture": 19.11,
+      "mean perimeter": 74.33,
+      "mean area": 418.7,
+      "mean concave points": 0.01148,
+      "target": 1
+    },
+    {
+      "row_id": 568,
+      "mean radius": 7.76,
+      "mean texture": 24.54,
+      "mean perimeter": 47.92,
+      "mean area": 181.0,
+      "mean concave points": 0.0,
+      "target": 1
+    },
+    {
+      "row_id": 353,
+      "mean radius": 15.08,
+      "mean texture": 25.74,
+      "mean perimeter": 98.0,
+      "mean area": 716.6,
+      "mean concave points": 0.06553,
+      "target": 0
+    },
+    {
+      "row_id": 361,
+      "mean radius": 13.3,
+      "mean texture": 21.57,
+      "mean perimeter": 85.24,
+      "mean area": 546.1,
+      "mean concave points": 0.02424,
+      "target": 1
+    },
+    {
+      "row_id": 460,
+      "mean radius": 17.08,
+      "mean texture": 27.15,
+      "mean perimeter": 111.2,
+      "mean area": 930.9,
+      "mean concave points": 0.06431,
+      "target": 0
+    },
+    {
+      "row_id": 406,
+      "mean radius": 16.14,
+      "mean texture": 14.86,
+      "mean perimeter": 104.3,
+      "mean area": 800.0,
+      "mean concave points": 0.04528,
+      "target": 1
+    },
+    {
+      "row_id": 17,
+      "mean radius": 16.13,
+      "mean texture": 20.68,
+      "mean perimeter": 108.1,
+      "mean area": 798.8,
+      "mean concave points": 0.1028,
+      "target": 0
+    },
+    {
+      "row_id": 305,
+      "mean radius": 11.6,
+      "mean texture": 24.49,
+      "mean perimeter": 74.23,
+      "mean area": 417.2,
+      "mean concave points": 0.01313,
+      "target": 1
+    },
+    {
+      "row_id": 231,
+      "mean radius": 11.32,
+      "mean texture": 27.08,
+      "mean perimeter": 71.76,
+      "mean area": 395.7,
+      "mean concave points": 0.003125,
+      "target": 1
+    },
+    {
+      "row_id": 200,
+      "mean radius": 12.23,
+      "mean texture": 19.56,
+      "mean perimeter": 78.54,
+      "mean area": 461.0,
+      "mean concave points": 0.04107,
+      "target": 1
+    },
+    {
+      "row_id": 116,
+      "mean radius": 8.95,
+      "mean texture": 15.76,
+      "mean perimeter": 58.74,
+      "mean area": 245.2,
+      "mean concave points": 0.02308,
+      "target": 1
+    },
+    {
+      "row_id": 506,
+      "mean radius": 12.22,
+      "mean texture": 20.04,
+      "mean perimeter": 79.47,
+      "mean area": 453.1,
+      "mean concave points": 0.02166,
+      "target": 1
+    },
+    {
+      "row_id": 257,
+      "mean radius": 15.32,
+      "mean texture": 17.27,
+      "mean perimeter": 103.2,
+      "mean area": 713.3,
+      "mean concave points": 0.1242,
+      "target": 0
+    },
+    {
+      "row_id": 177,
+      "mean radius": 16.46,
+      "mean texture": 20.11,
+      "mean perimeter": 109.3,
+      "mean area": 832.9,
+      "mean concave points": 0.08866,
+      "target": 0
+    },
+    {
+      "row_id": 343,
+      "mean radius": 19.68,
+      "mean texture": 21.68,
+      "mean perimeter": 129.9,
+      "mean area": 1194.0,
+      "mean concave points": 0.1103,
+      "target": 0
+    },
+    {
+      "row_id": 96,
+      "mean radius": 12.18,
+      "mean texture": 17.84,
+      "mean perimeter": 77.79,
+      "mean area": 451.1,
+      "mean concave points": 0.02941,
+      "target": 1
+    },
+    {
+      "row_id": 288,
+      "mean radius": 11.26,
+      "mean texture": 19.96,
+      "mean perimeter": 73.72,
+      "mean area": 394.1,
+      "mean concave points": 0.05588,
+      "target": 1
+    },
+    {
+      "row_id": 295,
+      "mean radius": 13.77,
+      "mean texture": 13.27,
+      "mean perimeter": 88.06,
+      "mean area": 582.7,
+      "mean concave points": 0.01917,
+      "target": 1
+    },
+    {
+      "row_id": 445,
+      "mean radius": 11.99,
+      "mean texture": 24.89,
+      "mean perimeter": 77.61,
+      "mean area": 441.3,
+      "mean concave points": 0.04274,
+      "target": 1
+    },
+    {
+      "row_id": 355,
+      "mean radius": 12.56,
+      "mean texture": 19.07,
+      "mean perimeter": 81.92,
+      "mean area": 485.8,
+      "mean concave points": 0.04391,
+      "target": 1
+    },
+    {
+      "row_id": 98,
+      "mean radius": 11.6,
+      "mean texture": 12.84,
+      "mean perimeter": 74.34,
+      "mean area": 412.6,
+      "mean concave points": 0.0335,
+      "target": 1
+    },
+    {
+      "row_id": 123,
+      "mean radius": 14.5,
+      "mean texture": 10.89,
+      "mean perimeter": 94.28,
+      "mean area": 640.7,
+      "mean concave points": 0.05778,
+      "target": 1
+    },
+    {
+      "row_id": 23,
+      "mean radius": 21.16,
+      "mean texture": 23.04,
+      "mean perimeter": 137.2,
+      "mean area": 1404.0,
+      "mean concave points": 0.08632,
+      "target": 0
+    },
+    {
+      "row_id": 235,
+      "mean radius": 14.03,
+      "mean texture": 21.25,
+      "mean perimeter": 89.79,
+      "mean area": 603.4,
+      "mean concave points": 0.01896,
+      "target": 1
+    },
+    {
+      "row_id": 158,
+      "mean radius": 12.06,
+      "mean texture": 12.74,
+      "mean perimeter": 76.84,
+      "mean area": 448.6,
+      "mean concave points": 0.01963,
+      "target": 1
+    },
+    {
+      "row_id": 73,
+      "mean radius": 13.8,
+      "mean texture": 15.79,
+      "mean perimeter": 90.43,
+      "mean area": 584.1,
+      "mean concave points": 0.05069,
+      "target": 0
+    }
+  ],
+  "hypothesis_tasks": [
+    {
+      "id": "HA01",
+      "stage": "hypotheses",
+      "тип": "A",
+      "prompt": "Чувствительность датчика 0.9, ложноположительная вероятность 0.1, доля дефектов 0.02. Датчик сработал. Найди вероятность дефекта. Кратко покажи расчёт и заверши строкой ОТВЕТ: <число>.",
+      "gold": 0.15517241379310345
+    },
+    {
+      "id": "HA02",
+      "stage": "hypotheses",
+      "тип": "A",
+      "prompt": "Чувствительность датчика 0.8, ложноположительная вероятность 0.04, доля дефектов 0.03. Датчик сработал. Найди вероятность дефекта. Кратко покажи расчёт и заверши строкой ОТВЕТ: <число>.",
+      "gold": 0.3821656050955414
+    },
+    {
+      "id": "HA03",
+      "stage": "hypotheses",
+      "тип": "A",
+      "prompt": "Чувствительность датчика 0.97, ложноположительная вероятность 0.03, доля дефектов 0.005. Датчик сработал. Найди вероятность дефекта. Кратко покажи расчёт и заверши строкой ОТВЕТ: <число>.",
+      "gold": 0.13976945244956776
+    },
+    {
+      "id": "HA04",
+      "stage": "hypotheses",
+      "тип": "A",
+      "prompt": "У линейного SVM вектор w=(5, 12). Найди полную ширину зазора между опорными гиперплоскостями. Заверши строкой ОТВЕТ: <число>.",
+      "gold": 0.15384615384615385
+    },
+    {
+      "id": "HA05",
+      "stage": "hypotheses",
+      "тип": "A",
+      "prompt": "У линейного SVM вектор w=(8, 15). Найди полную ширину зазора между опорными гиперплоскостями. Заверши строкой ОТВЕТ: <число>.",
+      "gold": 0.11764705882352941
+    },
+    {
+      "id": "HA06",
+      "stage": "hypotheses",
+      "тип": "A",
+      "prompt": "У линейного SVM вектор w=(7, 24). Найди полную ширину зазора между опорными гиперплоскостями. Заверши строкой ОТВЕТ: <число>.",
+      "gold": 0.08
+    },
+    {
+      "id": "HB01",
+      "stage": "hypotheses",
+      "тип": "B",
+      "prompt": "SVM с RBF-ядром обычно чувствителен к масштабу признаков. Ответь верно/неверно и одним предложением обоснуй.",
+      "gold": "верно"
+    },
+    {
+      "id": "HB02",
+      "stage": "hypotheses",
+      "тип": "B",
+      "prompt": "При изменении признака монотонным линейным масштабированием обычному дереву решений обязательно нужна стандартизация. Ответь верно/неверно и одним предложением обоснуй.",
+      "gold": "неверно"
+    },
+    {
+      "id": "HB03",
+      "stage": "hypotheses",
+      "тип": "B",
+      "prompt": "PCA использует целевые метки для поиска компонент максимального разделения классов. Ответь верно/неверно и одним предложением обоснуй.",
+      "gold": "неверно"
+    },
+    {
+      "id": "HB04",
+      "stage": "hypotheses",
+      "тип": "B",
+      "prompt": "При k-means внутрикластерная сумма квадратов не возрастает при увеличении числа кластеров при глобальном оптимуме. Ответь верно/неверно и одним предложением обоснуй.",
+      "gold": "верно"
+    },
+    {
+      "id": "HB05",
+      "stage": "hypotheses",
+      "тип": "B",
+      "prompt": "Высокая accuracy при редком положительном классе гарантирует высокий recall этого класса. Ответь верно/неверно и одним предложением обоснуй.",
+      "gold": "неверно"
+    },
+    {
+      "id": "HB06",
+      "stage": "hypotheses",
+      "тип": "B",
+      "prompt": "В kNN изменение масштаба одного признака может изменить ближайших соседей. Ответь верно/неверно и одним предложением обоснуй.",
+      "gold": "верно"
+    },
+    {
+      "id": "HF01",
+      "stage": "hypotheses",
+      "тип": "F",
+      "prompt": "Тест имеет чувствительность 0.93 и ложноположительную вероятность 0.04. Тест положительный; априорная вероятность болезни не дана. Можно ли однозначно найти вероятность болезни? Ответь кратко и обоснуй; не добавляй отсутствующие условия.",
+      "gold": "недостаточно данных"
+    },
+    {
+      "id": "HF02",
+      "stage": "hypotheses",
+      "тип": "F",
+      "prompt": "Первая компонента PCA объясняет 63% дисперсии. Какова точная суммарная доля для первых двух компонент? Ответь кратко и обоснуй; не добавляй отсутствующие условия.",
+      "gold": "недостаточно данных"
+    },
+    {
+      "id": "HF03",
+      "stage": "hypotheses",
+      "тип": "F",
+      "prompt": "Известны только TP=24 и FP=6. Можно ли однозначно вычислить recall? Других данных о матрице ошибок нет. Ответь кратко и обоснуй; не добавляй отсутствующие условия.",
+      "gold": "недостаточно данных"
+    },
+    {
+      "id": "HF04",
+      "stage": "hypotheses",
+      "тип": "F",
+      "prompt": "Известны precision=0.8 и всего 1000 объектов. Можно ли точно определить recall без иных сведений? Ответь кратко и обоснуй; не добавляй отсутствующие условия.",
+      "gold": "недостаточно данных"
+    },
+    {
+      "id": "HF05",
+      "stage": "hypotheses",
+      "тип": "F",
+      "prompt": "Для линейного классификатора известны w=(2,3) и точка x=(1,1), но свободный член b не указан. Можно ли однозначно определить знак w^T x+b? Ответь кратко и обоснуй; не добавляй отсутствующие условия.",
+      "gold": "недостаточно данных"
+    },
+    {
+      "id": "HF06",
+      "stage": "hypotheses",
+      "тип": "F",
+      "prompt": "Средняя ошибка регрессии по модулю равна 2. Можно ли по одному этому числу однозначно определить MSE? Ответь кратко и обоснуй; не добавляй отсутствующие условия.",
+      "gold": "недостаточно данных"
+    }
+  ],
+  "reference_values": {
+    "scikit-learn": "1.9.1",
+    "seed": 42,
+    "D": {
+      "D01": [
+        0.9824561403508771
+      ],
+      "D02": [
+        0.47058823529411764,
+        0.6765271765271765
+      ],
+      "D03": [
+        0.9333333333333333
+      ],
+      "D04": [
+        0.9527777777777777,
+        0.9722222222222222
+      ],
+      "D05": [
+        0.7031379535373291,
+        0.8437565906781406,
+        0.6714479532046417,
+        0.5017325536168312
+      ],
+      "D06": [
+        53.6262875688952
+      ]
+    }
+  },
+  "gold_checks": [
+    {
+      "id": "A01",
+      "verified": true,
+      "computed": 0.16101694915254236
+    },
+    {
+      "id": "A02",
+      "verified": true,
+      "computed": 0.12124740124740109
+    },
+    {
+      "id": "A03",
+      "verified": true,
+      "computed": 0.4
+    },
+    {
+      "id": "A04",
+      "verified": true,
+      "computed": 0.8709677419354839
+    },
+    {
+      "id": "A05",
+      "verified": true,
+      "computed": 1.0
+    },
+    {
+      "id": "A06",
+      "verified": true,
+      "computed": 1
+    },
+    {
+      "id": "E01",
+      "verified": true,
+      "computed": 0
+    },
+    {
+      "id": "E02",
+      "verified": true,
+      "computed": 0
+    },
+    {
+      "id": "E03",
+      "verified": true,
+      "computed": 1
+    }
+  ],
+  "code_runs": [
+    {
+      "case_id": "1ea7918ba338",
+      "id": "D01",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "0.9824561403508771\n",
+      "stderr": "",
+      "seconds": 0.989,
+      "source_sha256": "d0f5e0061967d3baa88745b95ca074e7d19d2f03de6807201d6e5d25355e0971",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "4187e3c9dc94",
+      "id": "D01",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "0.9824561403508771\n",
+      "stderr": "",
+      "seconds": 0.979,
+      "source_sha256": "9629937eb70941a3e4196ef63bda5155e5720c5865baad7d080900a02266ee22",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "518e0cc7331a",
+      "id": "D01",
+      "pass_at_1": 1,
+      "result_correct": 0,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 1.862,
+      "source_sha256": "04e312a81246c2c47d406e72a178e91f9ac470f7f543b8f4da1de44232f1f857",
+      "note": "Часть обязательного вывода отсутствует либо метрика вне допуска; вычисление без вывода не засчитывается как «выведите»."
+    },
+    {
+      "case_id": "ff6b07854294",
+      "id": "D02",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "0.47058823529411764\n0.6765271765271765\n",
+      "stderr": "",
+      "seconds": 0.807,
+      "source_sha256": "66685fbe8c7efb57ffcdcec2905327e6a0e2343470e538fd7f1bbdbbe92d16c3",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "f3e4357e72c5",
+      "id": "D02",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "0.47058823529411764 0.6765271765271765\n",
+      "stderr": "",
+      "seconds": 0.803,
+      "source_sha256": "262bf145b703bf08dc209021ad8033d482578dbd9561071b4c9a5550a74dfed6",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "b2a038d4dc14",
+      "id": "D02",
+      "pass_at_1": 0,
+      "result_correct": 0,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/mac/Documents/projects/ML/Lab3_4/results/review_code/b2a038d4dc14.py\", line 11, in <module>\n    pipeline = Pipeline([\n               ^^^^^^^^\nNameError: name 'Pipeline' is not defined\n",
+      "seconds": 0.804,
+      "source_sha256": "fa4631a3ce8f2aea084d97cc9088a318a9f9c190c0cfab1430900b5553ab6721",
+      "note": "Код не выполнился без исправлений."
+    },
+    {
+      "case_id": "33921a4c5131",
+      "id": "D03",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "Best k: 5\nTest accuracy: 0.9333\n",
+      "stderr": "",
+      "seconds": 0.841,
+      "source_sha256": "9acce0f26e62e215724141e5c086f9fc892066d47f0d4476a59f3d5b7c7aae53",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "4e91fc86526a",
+      "id": "D03",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "0.9333333333333333\n",
+      "stderr": "",
+      "seconds": 0.846,
+      "source_sha256": "95769c6037b9bc1feaff89f2e64d3d2c25a863492bda3ee8de33606207647121",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "5bcf4ef4e1ce",
+      "id": "D03",
+      "pass_at_1": 0,
+      "result_correct": 0,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "  File \"/Users/mac/Documents/projects/ML/Lab3_4/results/review_code/5bcf4ef4e1ce.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n",
+      "seconds": 0.013,
+      "source_sha256": "29e3f42cff7f996f40d86cacd8c898998e19263349b6c052de83729d86315774",
+      "note": "Код не выполнился без исправлений."
+    },
+    {
+      "case_id": "94930db8cb7d",
+      "id": "D04",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "Accuracy with PCA: 0.9528\nAccuracy without PCA: 0.9722\n",
+      "stderr": "",
+      "seconds": 0.828,
+      "source_sha256": "2dbb95e26e7bed61cfa96d8ef85646ed9440155e664d9358dd636ed20a9ee637",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "cbab7eaaa3cc",
+      "id": "D04",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "0.9527777777777777\n0.9722222222222222\n",
+      "stderr": "",
+      "seconds": 0.835,
+      "source_sha256": "4b28a9794ada79f9117a9b60f8b26aa58c025f257b4e37dcd3bd62cba015c821",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "9bf7ff61542c",
+      "id": "D04",
+      "pass_at_1": 0,
+      "result_correct": 0,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "  File \"/Users/mac/Documents/projects/ML/Lab3_4/results/review_code/9bf7ff61542c.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n",
+      "seconds": 0.014,
+      "source_sha256": "7bc2ca1d54dc9395354b49f7ce2716fd8b89de8e34214e65f07eb78cf8230ef2",
+      "note": "Код не выполнился без исправлений."
+    },
+    {
+      "case_id": "84720160ed3e",
+      "id": "D05",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "k=2, silhouette_score=0.7031\nk=3, silhouette_score=0.8438\nk=4, silhouette_score=0.6714\nk=5, silhouette_score=0.5017\nВыбрано k=3\n",
+      "stderr": "",
+      "seconds": 0.922,
+      "source_sha256": "f1eaf717c4f7ce0b938f2998802ccbb545242a3c8e498dff68deb6ebfb82fb29",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "465ece5da854",
+      "id": "D05",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "k=2: silhouette=0.7031\nk=3: silhouette=0.8438\nk=4: silhouette=0.6714\nk=5: silhouette=0.5017\nbest_k=3\n",
+      "stderr": "",
+      "seconds": 0.895,
+      "source_sha256": "b16376cf9741808e3faa0800f302ebb2ad77f40a0a56cbeaf2b807655c3d83c8",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "cae199b1c963",
+      "id": "D05",
+      "pass_at_1": 1,
+      "result_correct": 0,
+      "exit_code": 0,
+      "stdout": "3\n",
+      "stderr": "",
+      "seconds": 0.917,
+      "source_sha256": "bb5f1a5560e158e41c1f535412dcd3c9d4115550dbe0b6326dcb1ca926a52997",
+      "note": "Часть обязательного вывода отсутствует либо метрика вне допуска; вычисление без вывода не засчитывается как «выведите»."
+    },
+    {
+      "case_id": "b4d7d63be195",
+      "id": "D06",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "53.6262875688952\n",
+      "stderr": "",
+      "seconds": 0.845,
+      "source_sha256": "79075dd504fb379d75b2270508d05bbe97ecb140358ce1a82685cea83702d0c9",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "5509bac5b325",
+      "id": "D06",
+      "pass_at_1": 1,
+      "result_correct": 1,
+      "exit_code": 0,
+      "stdout": "53.6262875688952\n",
+      "stderr": "",
+      "seconds": 0.813,
+      "source_sha256": "4bb15eaba07b2539f0c58bbb979887e80ea511c284f95bebc07cc2e64003d935",
+      "note": "Вывод содержит все требуемые метрики в допуске."
+    },
+    {
+      "case_id": "afda0f4a23f3",
+      "id": "D06",
+      "pass_at_1": 0,
+      "result_correct": 0,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "  File \"/Users/mac/Documents/projects/ML/Lab3_4/results/review_code/afda0f4a23f3.py\", line 1\n    ```python\n    ^\nSyntaxError: invalid syntax\n",
+      "seconds": 0.014,
+      "source_sha256": "f20e5f2238055a390993b844d3971bd31f30a44820ff2f39bf922f51f5e51f3f",
+      "note": "Код не выполнился без исправлений."
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-26.4.1-arm64-arm-64bit",
+    "seed": 42,
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "matplotlib": "3.11.2",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0",
+      "scikit-learn": "1.9.1",
+      "ipykernel": "7.4.0"
+    }
+  }
+}

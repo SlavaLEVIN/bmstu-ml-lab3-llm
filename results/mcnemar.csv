@@ -1,4 +1,0 @@
-﻿model_a,model_b,n,p_value
-gigachat,gpt,36,0.21875
-gigachat,local,36,0.00341796875
-gpt,local,36,6.103515625e-05
