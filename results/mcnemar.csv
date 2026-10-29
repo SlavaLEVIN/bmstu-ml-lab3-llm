@@ -1,0 +1,4 @@
+﻿model_a,model_b,n,p_value
+gigachat,gpt,15,0.625
+gigachat,local,15,1.0
+gpt,local,15,0.25
